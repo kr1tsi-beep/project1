@@ -1,0 +1,250 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary: #038897;
+    --secondary: #f5f5f5;
+    --dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--primary);
+}
+
+.logo {
+    color: rgb(252, 252, 252);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* General Section */
+section {
+    padding: 60px 8%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background: var(--secondary);
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Features Grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: var(--secondary);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.profile{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    background: var(--secondary);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-card img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Promotion */
+.promotion {
+    background: #ffe082;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact-info {
+    background: var(--secondary);
+    border-radius: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    opacity: 0.8;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.map img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.social a {
+    color: #fffffe;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .features,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
