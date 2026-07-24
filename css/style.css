@@ -137,10 +137,12 @@ section {
     padding: 20px;
     border-radius: 10px;
     transition: 0.3s;
+    text-align: center;
 }
 
-.product-card {
-    text-align: center;
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
