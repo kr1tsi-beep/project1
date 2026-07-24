@@ -165,7 +165,6 @@ section {
 /* Contact */
 .contact-info {
     background: var(--secondary);
-    border-radius: 10px;
 }
 
 .contact-form form {
